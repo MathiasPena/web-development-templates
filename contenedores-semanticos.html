@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenedores Semánticos</title>
+    <link rel="stylesheet" href="contenedores-semanticos.css">
+</head>
+<body>
+    <header>
+        <h1>Mi Página Web</h1>
+        <img src="logo.png" alt="Logo de la página" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#services">Servicios</a></li>
+                <li><a href="#testimonials">Testimonios</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>Sobre mí</h2>
+            <p>Descripción sobre mí, mis intereses, y mi trayectoria.</p>
+        </section>
+
+        <section id="services">
+            <h2>Servicios</h2>
+            <div class="grid">
+                <article>
+                    <h3>Servicio 1</h3>
+                    <p>Descripción del primer servicio que ofrezco.</p>
+                </article>
+                <article>
+                    <h3>Servicio 2</h3>
+                    <p>Descripción del segundo servicio que ofrezco.</p>
+                </article>
+                <article>
+                    <h3>Servicio 3</h3>
+                    <p>Descripción del tercer servicio que ofrezco.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <h2>Testimonios</h2>
+            <blockquote>
+                <p>"Un excelente trabajo, realmente cumplió con nuestras expectativas!"</p>
+                <footer>— Cliente Satisfecho</footer>
+            </blockquote>
+        </section>
+
+        <aside>
+            <h2>Artículos Relacionados</h2>
+            <ul>
+                <li><a href="#link1">Artículo 1</a></li>
+                <li><a href="#link2">Artículo 2</a></li>
+            </ul>
+        </aside>
+
+        <section id="skills">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme a través de este formulario:</p>
+            <form>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <figure>
+            <img src="imagen.jpg" alt="Descripción de la imagen">
+            <figcaption>Esta es una imagen de ejemplo.</figcaption>
+        </figure>
+
+        <details>
+            <summary>Más Información</summary>
+            <p>Aquí puedes añadir información adicional o descripciones que el usuario puede expandir.</p>
+        </details>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Web. Todos los derechos reservados.</p>
+        <address>
+            <p>Contacto: <a href="mailto:info@miweb.com">info@miweb.com</a></p>
+        </address>
+    </footer>
+</body>
+</html>

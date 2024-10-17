@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Completos</title>
+    <link rel="stylesheet" href="elementos-interactivos.css">
+</head>
+<body>
+    <header>
+        <h1>Elementos Completos</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Botones</h2>
+            <div class="button-container">
+                <button>Botón Primario</button>
+                <button class="secondary">Botón Secundario</button>
+                <button class="success">Botón Éxito</button>
+                <button class="danger">Botón Peligroso</button>
+                <button class="disabled" disabled>Botón Deshabilitado</button>
+            </div>
+        </section>
+
+        <section>
+            <h2>Campos de Texto</h2>
+            <div class="input-container">
+                <label for="text">Texto:</label>
+                <input type="text" id="text" placeholder="Escribe algo aquí" required>
+            </div>
+            <div class="input-container">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="ejemplo@dominio.com" required>
+            </div>
+            <div class="input-container">
+                <label for="phone">Teléfono:</label>
+                <input type="tel" id="phone" placeholder="(123) 456-7890" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" placeholder="******" required>
+            </div>
+            <div class="input-container">
+                <label for="url">URL:</label>
+                <input type="url" id="url" placeholder="https://example.com">
+            </div>
+        </section>
+
+        <section>
+            <h2>Checkboxes y Radios</h2>
+            <fieldset>
+                <legend>Intereses:</legend>
+                <input type="checkbox" id="interest1" name="interest" value="1">
+                <label for="interest1">Interés 1</label><br>
+                <input type="checkbox" id="interest2" name="interest" value="2">
+                <label for="interest2">Interés 2</label><br>
+                <input type="checkbox" id="interest3" name="interest" value="3">
+                <label for="interest3">Interés 3</label><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Género:</legend>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Masculino</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Femenino</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Otro</label>
+            </fieldset>
+        </section>
+
+        <section>
+            <h2>Tabla de Ejemplo</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Email</th>
+                        <th>Teléfono</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>juan.perez@example.com</td>
+                        <td>(123) 456-7890</td>
+                    </tr>
+                    <tr>
+                        <td>María López</td>
+                        <td>maria.lopez@example.com</td>
+                        <td>(098) 765-4321</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Formulario Completo</h2>
+            <form>
+                <div class="input-container">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="emailForm">Email:</label>
+                    <input type="email" id="emailForm" name="emailForm" required>
+                </div>
+
+                <div class="input-container">
+                    <label for="phoneForm">Teléfono:</label>
+                    <input type="tel" id="phoneForm" name="phoneForm" required>
+                </div>
+
+                <fieldset>
+                    <legend>Intereses:</legend>
+                    <input type="checkbox" id="interest1Form" name="interestForm" value="1">
+                    <label for="interest1Form">Interés 1</label><br>
+                    <input type="checkbox" id="interest2Form" name="interestForm" value="2">
+                    <label for="interest2Form">Interés 2</label><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Género:</legend>
+                    <input type="radio" id="maleForm" name="genderForm" value="male">
+                    <label for="maleForm">Masculino</label><br>
+                    <input type="radio" id="femaleForm" name="genderForm" value="female">
+                    <label for="femaleForm">Femenino</label><br>
+                </fieldset>
+
+                <div class="input-container">
+                    <label for="message">Mensaje:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Media</h2>
+            <h3>Imágenes</h3>
+            <img src="https://placecats.com/300/200" alt="Ejemplo" class="responsive">
+            <h3>Videos</h3>
+            <video controls class="responsive">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" >
+                Tu navegador no soporta el video.
+                <track kind="subtitles" src="subtitles.vtt" srclang="en" label="English">
+                <track kind="descriptions" src="description.vtt" srclang="en" label="English">
+            </video>
+        </section>
+    <!-- Nueva sección: Listas -->
+    <section>
+        <h2>Listas</h2>
+        <div class="list-container">
+            <h3>Lista Ordenada</h3>
+            <ol>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+                <li>Elemento 3</li>
+            </ol>
+
+            <h3>Lista Desordenada</h3>
+            <ul>
+                <li>Elemento A</li>
+                <li>Elemento B</li>
+                <li>Elemento C</li>
+            </ul>
+
+            <h3>Lista de Descripción</h3>
+            <dl>
+                <dt>HTML</dt>
+                <dd>Lenguaje de marcado para la web.</dd>
+                <dt>CSS</dt>
+                <dd>Lenguaje de estilos para diseñar sitios web.</dd>
+                <dt>JavaScript</dt>
+                <dd>Lenguaje de programación para interactividad.</dd>
+            </dl>
+        </div>
+    </section>
+
+    <!-- Nueva sección: Progreso -->
+    <section>
+        <h2>Barra de Progreso</h2>
+        <div class="progress-container">
+            <label for="progress">Progreso del Proyecto:</label>
+            <progress id="progress" value="50" max="100">50%</progress>
+        </div>
+    </section>
+
+    <!-- Nueva sección: Detalles -->
+    <section>
+        <h2>Detalles y Resumen</h2>
+        <details>
+            <summary>¿Qué es HTML?</summary>
+            <p>HTML es un lenguaje de marcado utilizado para estructurar contenido en la web.</p>
+        </details>
+        <details>
+            <summary>¿Qué es CSS?</summary>
+            <p>CSS es un lenguaje utilizado para describir la presentación de documentos HTML.</p>
+        </details>
+    </section>
+
+    <!-- Nueva sección: Tipografía y colores -->
+    <section>
+        <h2>Tipografía y Colores</h2>
+        <div class="typography-container">
+            <h3>Títulos y texto</h3>
+            <h1>Este es un H1</h1>
+            <h2>Este es un H2</h2>
+            <h3>Este es un H3</h3>
+            <p>Esto es un párrafo estándar de texto.</p>
+            <p class="text-primary">Texto en color primario.</p>
+            <p class="text-secondary">Texto en color secundario.</p>
+        </div>
+    </section>
+
+    <!-- Nueva sección: Íconos -->
+    <section>
+        <h2>Íconos</h2>
+        <div class="icon-container">
+            <i class="fas fa-home"></i> Home <br>
+            <i class="fas fa-envelope"></i> Correo <br>
+            <i class="fas fa-phone"></i> Teléfono
+        </div>
+    </section>
+
+</main>
+
+    <footer>
+        <p>&copy; 2024 Elementos Completos. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

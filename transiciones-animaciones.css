@@ -1,0 +1,415 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+/* Estilos para transiciones básicas */
+.transition-box {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    transition: background 0.5s, transform 0.5s;
+}
+
+.transition-box:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.transition-button {
+    padding: 10px 20px;
+    border: none;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.transition-button:hover {
+    background: #218838;
+}
+
+/* Estilos para animaciones con keyframes */
+.animation-box {
+    background: #dc3545;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    animation: slideIn 0.5s ease forwards;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.pulse {
+    background: #ffc107;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    display: inline-block;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.bounce {
+    background: #17a2b8;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    display: inline-block;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+.rotate {
+    background: #6f42c1;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    display: inline-block;
+    animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.shake {
+    background: #dc3545;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    display: inline-block;
+    animation: shake 0.5s infinite;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+}
+
+.fade-in {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.zoom {
+    background: #ffc107;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    animation: zoomIn 1s forwards;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.flip {
+    background: #17a2b8;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    animation: flip 1s forwards;
+}
+
+@keyframes flip {
+    from {
+        transform: perspective(400px) rotateY(0);
+    }
+    to {
+        transform: perspective(400px) rotateY(180deg);
+    }
+}
+
+.swing {
+    background: #28a745;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    animation: swing 1s infinite;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+/* Estilos para efectos de hover */
+.hover-box {
+    background: #6f42c1;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    transition: transform 0.3s;
+}
+
+.hover-box:hover {
+    transform: rotate(5deg);
+}
+
+.hover-image {
+    width: 100px;
+    transition: transform 0.3s;
+}
+
+.hover-image:hover {
+    transform: scale(1.1);
+}
+
+.hover-zoom {
+    background: #28a745;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+
+.hover-rotate {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    transition: transform 0.3s;
+}
+
+.hover-rotate:hover {
+    transform: rotate(15deg);
+}
+
+/* Estilos para animaciones en texto */
+.text-fade {
+    opacity: 0;
+    animation: fadeInText 2s forwards;
+}
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
+}
+
+.text-slide {
+    transform: translateX(-100%);
+    animation: slideInText 1s forwards;
+}
+
+@keyframes slideInText {
+    to {
+        transform: translateX(0);
+    }
+}
+
+.text-rotate {
+    display: inline-block;
+    animation: rotateText 2s infinite linear;
+}
+
+@keyframes rotateText {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.text-jump {
+    display: inline-block;
+    animation: jumpText 1s infinite;
+}
+
+@keyframes jumpText {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Estilos para cajas con transiciones */
+.slide-in-box {
+    background: #17a2b8;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    animation: slideIn 0.5s forwards;
+}
+
+.fade-out-box {
+    background: #dc3545;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    opacity: 1;
+    animation: fadeOut 2s forwards;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+    }
+}
+
+.expand-box {
+    background: #28a745;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    animation: expand 0.5s forwards;
+}
+
+@keyframes expand {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+.spin-box {
+    background: #ffc107;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    animation: spin 1s forwards;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.bounce-box {
+    background: #007BFF;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    animation: bounceBox 1s infinite;
+}
+
+@keyframes bounceBox {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Estilos para combinación de efectos */
+.combo-animation {
+    background: #6f42c1;
+    color: white;
+    padding: 20px;
+    margin: 10px 0;
+    animation: combo 2s infinite;
+}
+
+@keyframes combo {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
