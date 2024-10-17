@@ -1,0 +1,470 @@
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor a lo largo en la parte superior */
+.contenedor-arriba {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Contenedor centrado vertical y horizontalmente */
+.contenedor-centrado {
+    height: 200px;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    background-color: #9b59b6;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Contenedor con float */
+.contenedor-float {
+    overflow: auto; /* Para mantener el flujo del documento */
+    background-color: #e74c3c;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.float-izquierda {
+    float: left;
+    width: 50%;
+    background-color: #c0392b;
+    color: white;
+    padding: 10px;
+}
+
+.float-derecha {
+    float: right;
+    width: 50%;
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+}
+
+/* Flexbox con elementos a los lados */
+.contenedor-flex {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1abc9c;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.flex-izquierda, .flex-derecha {
+    padding: 10px;
+    color: white;
+}
+
+.flex-izquierda {
+    background-color: #16a085;
+}
+
+.flex-derecha {
+    background-color: #27ae60;
+}
+
+/* Flexbox en columna */
+.contenedor-flex-columna {
+    display: flex;
+    flex-direction: column;
+    background-color: #f39c12;
+    padding: 20px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout */
+.contenedor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background-color: #e67e22;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedor-grid div {
+    background-color: #d35400;
+    padding: 20px;
+    color: white;
+}
+
+/* Contenedor con dos elementos de diferente tamaño */
+.contenedor-horizontal {
+    display: flex;
+    background-color: #2980b9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.elemento-grande {
+    background-color: #3498db;
+    padding: 20px;
+    color: white;
+    flex: 3;
+}
+
+.elemento-pequeño {
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+    flex: 1;
+}
+
+/* Posicionamiento relativo y absoluto */
+.contenedor-relativo {
+    position: relative;
+    background-color: #8e44ad;
+    color: white;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.absoluto {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #9b59b6;
+    padding: 10px;
+    color: white;
+}
+
+/* Contenedor sticky */
+.contenedor-sticky {
+    position: -webkit-sticky; /* Para navegadores Webkit (Safari) */
+    position: sticky;
+    top: 0;
+    background-color: #34495e;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Contenedor fijo */
+.contenedor-fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: #8e44ad;
+    padding: 10px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Flexbox con space-between y space-around */
+.contenedor-flex-espaciado {
+    margin-bottom: 20px;
+}
+
+.flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    background-color: #27ae60;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+    background-color: #2ecc71;
+    padding: 20px;
+}
+
+/* Grid layout avanzado */
+.contenedor-grid-avanzado {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background-color: #2980b9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-element {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+}
+
+.grid-element:nth-child(1) {
+    grid-column: span 2; /* El primer elemento ocupa dos columnas */
+}
+
+/* Contenedor con z-index */
+.contenedor-zindex {
+    position: relative;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.elemento-trasero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #e74c3c;
+    padding: 20px;
+    color: white;
+}
+
+.elemento-delantero {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+    background-color: #9b59b6;
+    padding: 20px;
+    color: white;
+}
+
+/* Media queries para diseño responsivo */
+.contenedor-responsivo {
+    display: flex;
+    gap: 10px;
+    background-color: #16a085;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedor-responsivo div {
+    background-color: #1abc9c;
+    color: white;
+    padding: 20px;
+    flex: 1;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 600px) {
+    .contenedor-responsivo {
+        flex-direction: column;
+    }
+}
+
+/* Animaciones y transformaciones básicas */
+.contenedor-animacion {
+    margin-bottom: 20px;
+}
+
+.elemento-animado {
+    background-color: #e67e22;
+    padding: 20px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.elemento-animado:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+/* Posicionamiento Absolute y Relative */
+.contenedor-absolute {
+    position: relative;
+    height: 200px;
+    background-color: #ecf0f1;
+    margin-bottom: 20px;
+}
+
+.elemento-absolute {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #e74c3c;
+    padding: 20px;
+    color: white;
+}
+
+.elemento-relativo {
+    position: relative;
+    top: 100px;
+    left: 50px;
+    background-color: #3498db;
+    padding: 20px;
+    color: white;
+}
+
+/* Flexbox con wrap */
+.contenedor-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #2c3e50;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.flex-item {
+    background-color: #8e44ad;
+    color: white;
+    padding: 20px;
+    flex: 1 1 150px;
+    text-align: center;
+}
+
+/* Grid con filas y columnas automáticas */
+.contenedor-grid-automatico {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    background-color: #1abc9c;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-item-auto {
+    background-color: #16a085;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Inline-block */
+.contenedor-inline-block {
+    background-color: #d35400;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.elemento-inline-block {
+    display: inline-block;
+    background-color: #e67e22;
+    padding: 20px;
+    color: white;
+    margin-right: 10px;
+}
+
+/* Float */
+.contenedor-float2 {
+    background-color: #f39c12;
+    padding: 20px;
+    margin-bottom: 20px;
+    overflow: auto; /* Para manejar el comportamiento de los floats */
+}
+
+.elemento-float-left {
+    float: left;
+    background-color: #f1c40f;
+    color: white;
+    padding: 20px;
+    width: 40%;
+}
+
+.elemento-float-right {
+    float: right;
+    background-color: #e67e22;
+    color: white;
+    padding: 20px;
+    width: 40%;
+}
+
+/* Flexbox centrado */
+.contenedor-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: #34495e;
+    margin-bottom: 20px;
+}
+
+.flex-item-center {
+    background-color: #1abc9c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Grid con columnas desiguales */
+.contenedor-grid-desigual {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; /* Columna 1 más grande */
+    gap: 10px;
+    background-color: #e74c3c;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.grid-item-desigual {
+    background-color: #c0392b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Sticky header */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    background-color: #f39c12;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    z-index: 10; /* Asegura que esté encima del contenido */
+}
+
+.content-largo {
+    height: 600px; /* Simulación de contenido largo */
+    background-color: #ecf0f1;
+    padding: 20px;
+}
+
+/* Superposición y z-index */
+.contenedor-z-index {
+    position: relative;
+    height: 200px;
+    background-color: #8e44ad;
+    margin-bottom: 20px;
+}
+
+.elemento-z-index-1 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    background-color: #9b59b6;
+    padding: 30px;
+    color: white;
+    z-index: 1;
+}
+
+.elemento-z-index-2 {
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    background-color: #f1c40f;
+    padding: 30px;
+    color: white;
+    z-index: 2;
+}
+
+/* Alineación vertical en Flexbox */
+.contenedor-flex-vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background-color: #2980b9;
+    margin-bottom: 20px;
+}
+
+.flex-item-vertical {
+    background-color: #3498db;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
