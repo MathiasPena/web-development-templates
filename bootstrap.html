@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Template</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">MySite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-light text-center p-5">
+        <div class="container">
+            <h1 class="display-4">Welcome to My Bootstrap Site</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for showcasing content.</p>
+            <a href="#" class="btn btn-primary btn-lg">Learn more</a>
+        </div>
+    </section>
+
+    <!-- Content Section -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Card 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="bi bi-star-fill fs-1 text-primary mb-3"></i>
+                        <h3>Feature 1</h3>
+                        <p>Short description of the feature. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="bi bi-lightbulb-fill fs-1 text-primary mb-3"></i>
+                        <h3>Feature 2</h3>
+                        <p>Short description of the feature. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <i class="bi bi-shield-fill-check fs-1 text-primary mb-3"></i>
+                        <h3>Feature 3</h3>
+                        <p>Short description of the feature. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <img src="https://placehold.jp/150x150.png" class="img-fluid rounded" alt="Sample  1">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://placehold.jp/150x150.png" class="img-fluid rounded" alt="Sample  2">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="https://placehold.jp/150x150.png" class="img-fluid rounded" alt="Sample  3">
+            </div>
+        </div>
+    </section>
+
+    <!-- Table Section -->
+    <section class="container my-5">
+        <h2 class="mb-4">Sample Table</h2>
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Username</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>@johndoe</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Jane</td>
+                    <td>Smith</td>
+                    <td>@janesmith</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Bob</td>
+                    <td>Johnson</td>
+                    <td>@bobjohnson</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="container py-5">
+        <h2>Contact Us</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Modal Trigger Button -->
+    <section class="container text-center py-5">
+        <h2>Click the button to open a modal</h2>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Open Modal
+        </button>
+    </section>
+
+    <!-- Modal Structure -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal Title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    This is a Bootstrap modal. You can place any content here.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Accordion Section -->
+    <section class="container py-5">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Question 1
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        This is the answer to question 1.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Question 2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        This is the answer to question 2.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Progress Bar Section -->
+    <section class="container py-5">
+        <h2>Progress Bars</h2>
+        <div class="mb-4">
+            <label for="progress1" class="form-label">Task 1</label>
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0"
+                    aria-valuemax="100">70%</div>
+            </div>
+        </div>
+        <div class="mb-4">
+            <label for="progress2" class="form-label">Task 2</label>
+            <div class="progress">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 50%;" aria-valuenow="50"
+                    aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+        </div>
+        <div class="mb-4">
+            <label for="progress3" class="form-label">Task 3</label>
+            <div class="progress">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%;" aria-valuenow="90"
+                    aria-valuemin="0" aria-valuemax="100">90%</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- List Group Section -->
+    <section class="container py-5">
+        <h2>List Group</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Morbi leo risus</li>
+                    <li class="list-group-item">Porta ac consectetur ac</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <ul class="list-group">
+                    <li class="list-group-item active" aria-current="true">Active item</li>
+                    <li class="list-group-item">A second item</li>
+                    <li class="list-group-item">A third item</li>
+                    <li class="list-group-item">A fourth item</li>
+                    <li class="list-group-item">And a fifth one</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alerts Section -->
+    <section class="container py-5">
+        <h2>Alerts</h2>
+        <div class="alert alert-primary" role="alert">
+            This is a primary alert—check it out!
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            This is a secondary alert—check it out!
+        </div>
+        <div class="alert alert-success" role="alert">
+            This is a success alert—check it out!
+        </div>
+        <div class="alert alert-danger" role="alert">
+            This is a danger alert—check it out!
+        </div>
+        <div class="alert alert-warning" role="alert">
+            This is a warning alert—check it out!
+        </div>
+        <div class="alert alert-info" role="alert">
+            This is an info alert—check it out!
+        </div>
+        <div class="alert alert-light" role="alert">
+            This is a light alert—check it out!
+        </div>
+        <div class="alert alert-dark" role="alert">
+            This is a dark alert—check it out!
+        </div>
+    </section>
+
+    <!-- Card Deck Section -->
+    <section class="container py-5">
+        <h2>Card Deck</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://placehold.jp/150x150.png" class="card-img-top" alt="Card  1">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 1</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://placehold.jp/150x150.png" class="card-img-top" alt="Card  2">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 2</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://placehold.jp/150x150.png" class="card-img-top" alt="Card  3">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title 3</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="container py-5">
+        <h2>Image Carousel</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://placehold.jp/150x150.png" class="d-block w-100" alt=" 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.jp/150x150.png" class="d-block w-100" alt=" 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://placehold.jp/150x150.png" class="d-block w-100" alt=" 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Pagination Section -->
+    <section class="container py-5">
+        <h2>Pagination</h2>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Search Bar Section -->
+    <section class="container py-5">
+        <h2>Search Bar</h2>
+        <div class="row">
+            <div class="col-md-8 mx-auto">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Badges Section -->
+    <section class="container py-5">
+        <h2>Badges</h2>
+        <h3>Example heading <span class="badge bg-secondary">New</span></h3>
+        <p>
+            This is some text with a badge <span class="badge bg-primary">4</span>.
+        </p>
+        <button type="button" class="btn btn-primary">
+            Notifications <span class="badge bg-light text-dark">9</span>
+        </button>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="container py-5">
+        <h2>Pricing Plans</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 fw-normal">Free</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>10 users included</li>
+                            <li>2 GB of storage</li>
+                            <li>Email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 fw-normal">Pro</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>20 users included</li>
+                            <li>10 GB of storage</li>
+                            <li>Priority email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <h4 class="my-0 fw-normal">Enterprise</h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>30 users included</li>
+                            <li>15 GB of storage</li>
+                            <li>Phone and email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container py-5">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        What is the return policy?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Our return policy allows you to return products within 30 days of purchase. Please keep your
+                        receipt for verification.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How long does shipping take?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Shipping typically takes 5-7 business days for standard delivery. Express options are available
+                        at checkout.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Can I change my order after it's placed?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#faqAccordion">
+                    <div class="accordion-body">
+                        Yes, you can change your order within 24 hours after placing it. Contact our support team for
+                        assistance.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="container py-5 text-center">
+        <h2>What Our Customers Say</h2>
+        <div class="row py-4">
+            <div class="col-lg-4">
+                <img src="https://placehold.jp/150x150.png" class="rounded-circle mb-3" alt="Customer 1">
+                <blockquote class="blockquote">
+                    <p>"Excellent service! Fast and reliable. I am really satisfied with my purchase."</p>
+                </blockquote>
+                <footer class="blockquote-footer">John Doe, <cite title="Source Title">Tech Enthusiast</cite></footer>
+            </div>
+            <div class="col-lg-4">
+                <img src="https://placehold.jp/150x150.png" class="rounded-circle mb-3" alt="Customer 2">
+                <blockquote class="blockquote">
+                    <p>"Best online shopping experience I have ever had. Highly recommend!"</p>
+                </blockquote>
+                <footer class="blockquote-footer">Jane Smith, <cite title="Source Title">Frequent Shopper</cite>
+                </footer>
+            </div>
+            <div class="col-lg-4">
+                <img src="https://placehold.jp/150x150.png" class="rounded-circle mb-3" alt="Customer 3">
+                <blockquote class="blockquote">
+                    <p>"Amazing quality and fast delivery. Will definitely order again!"</p>
+                </blockquote>
+                <footer class="blockquote-footer">Alice Johnson, <cite title="Source Title">Designer</cite></footer>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="container py-5 text-center">
+        <h2>Our Achievements</h2>
+        <div class="row">
+            <div class="col-lg-3">
+                <h3>500+</h3>
+                <p>Happy Clients</p>
+            </div>
+            <div class="col-lg-3">
+                <h3>1000+</h3>
+                <p>Projects Completed</p>
+            </div>
+            <div class="col-lg-3">
+                <h3>300</h3>
+                <p>Team Members</p>
+            </div>
+            <div class="col-lg-3">
+                <h3>25</h3>
+                <p>Awards Won</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="container py-5">
+        <h2>Meet Our Team</h2>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <img src="https://placehold.jp/150x150.png" class="rounded-circle mb-3" alt="Team Member 1">
+                <h5>Emily Brown</h5>
+                <p>CEO</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="https://placehold.jp/150x150.png" class="rounded-circle mb-3" alt="Team Member 2">
+                <h5>Michael Green</h5>
+                <p>Lead Developer</p>
+            </div>
+            <div class="col-md-4 text-center">
+                <img src="https://placehold.jp/150x150.png" class="rounded-circle mb-3" alt="Team Member 3">
+                <h5>Sarah Lee</h5>
+                <p>Project Manager</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Testimonials Section -->
+    <section class="container py-5 text-center">
+        <h2>What Our Clients Say</h2>
+        <div id="carouselTestimonials" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <blockquote class="blockquote">
+                        <p>"Fantastic service and amazing team! Highly recommend."</p>
+                    </blockquote>
+                    <footer class="blockquote-footer">John Doe, <cite title="Source Title">Tech Entrepreneur</cite>
+                    </footer>
+                </div>
+                <div class="carousel-item">
+                    <blockquote class="blockquote">
+                        <p>"An outstanding experience from start to finish!"</p>
+                    </blockquote>
+                    <footer class="blockquote-footer">Sarah Smith, <cite title="Source Title">Designer</cite></footer>
+                </div>
+                <div class="carousel-item">
+                    <blockquote class="blockquote">
+                        <p>"Professional, reliable, and fast. Couldn’t ask for more."</p>
+                    </blockquote>
+                    <footer class="blockquote-footer">Alice Brown, <cite title="Source Title">Business Owner</cite>
+                    </footer>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Zig-Zag Features Section -->
+    <section class="container py-5">
+        <h2>Our Unique Features</h2>
+        <div class="row align-items-center py-4">
+            <div class="col-md-6">
+                <img src="https://placehold.jp/150x150.png" class="img-fluid" alt="Feature 1">
+            </div>
+            <div class="col-md-6">
+                <h3>Innovative Design</h3>
+                <p>We focus on delivering cutting-edge design solutions tailored to your business needs. Your success is
+                    our priority.</p>
+            </div>
+        </div>
+        <div class="row align-items-center py-4">
+            <div class="col-md-6 order-md-2">
+                <img src="https://placehold.jp/150x150.png" class="img-fluid" alt="Feature 2">
+            </div>
+            <div class="col-md-6 order-md-1">
+                <h3>Seamless Integration</h3>
+                <p>Our solutions integrate seamlessly with your existing infrastructure, ensuring a smooth and efficient
+                    transition.</p>
+            </div>
+        </div>
+        <div class="row align-items-center py-4">
+            <div class="col-md-6">
+                <img src="https://placehold.jp/150x150.png" class="img-fluid" alt="Feature 3">
+            </div>
+            <div class="col-md-6">
+                <h3>24/7 Support</h3>
+                <p>We offer round-the-clock support, making sure your business operations never face downtime. We are
+                    always here for you.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map Section -->
+    <section class="container py-5">
+        <h2>Visit Our Office</h2>
+        <div class="map-responsive">
+            <iframe title="Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508764!2d144.9537363156806!3d-37.816279742021444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e33!2sVictoria%20Harbour%20Promenade%2C%20Docklands%20VIC%203008%2C%20Australia!5e0!3m2!1sen!2sus!4v1608230570179!5m2!1sen!2sus"
+                width="100%" height="450" style="border:0;" allowfullscreen="" aria-hidden="false"></iframe>
+        </div>
+    </section>
+
+    <style>
+        .map-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+    </style>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 MySite. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
