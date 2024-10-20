@@ -1,0 +1,156 @@
+<!-- Atributos generales -->
+id="valor" <!-- Identificador único para un elemento en el documento -->
+class="nombre-clase" <!-- Asigna una o más clases CSS al elemento -->
+style="propiedad: valor;" <!-- Agrega estilos CSS en línea al elemento -->
+title="texto" <!-- Proporciona información adicional que aparece como tooltip al pasar el mouse -->
+
+<!-- Atributos para enlaces y multimedia -->
+href="URL" <!-- URL de destino del enlace (en <a>, <link>, <area>) -->
+src="URL" <!-- URL de la fuente del recurso, usado en <img>, <audio>, <video>, <script> -->
+alt="texto alternativo" <!-- Texto que describe el contenido de una imagen si no se puede cargar -->
+target="_blank" <!-- Abre el enlace en una nueva ventana o pestaña -->
+
+<!-- Atributos de formularios -->
+action="URL" <!-- Define dónde se envían los datos del formulario -->
+method="get/post" <!-- Especifica cómo se envían los datos del formulario (GET o POST) -->
+type="tipo" <!-- Define el tipo de entrada, como texto, contraseña, email, etc. (en <input>) -->
+name="nombre" <!-- Nombre del campo de formulario, usado para identificar los datos -->
+value="valor" <!-- Valor predeterminado del campo, o valor que se envía al servidor -->
+placeholder="texto" <!-- Texto de sugerencia que se muestra en el campo hasta que se llena -->
+required <!-- Indica que el campo es obligatorio para enviar el formulario -->
+disabled <!-- Deshabilita el elemento de formulario, impidiendo su interacción -->
+readonly <!-- El campo no se puede modificar, pero se puede seleccionar su contenido -->
+min="número" <!-- Valor mínimo permitido en entradas numéricas o fechas -->
+max="número" <!-- Valor máximo permitido en entradas numéricas o fechas -->
+step="número" <!-- Incrementos válidos para el valor numérico (por ejemplo, step="0.01" para decimales) -->
+checked <!-- Indica si un checkbox o radio button está seleccionado por defecto -->
+multiple <!-- Permite seleccionar múltiples opciones (en <select>, <input type="file">) -->
+autofocus <!-- Indica que el campo debería recibir el foco de entrada al cargar la página -->
+autocomplete="on/off" <!-- Habilita o deshabilita la autocompletación del campo -->
+pattern="regex" <!-- Expresión regular que define el formato permitido para los valores -->
+maxlength="número" <!-- Número máximo de caracteres permitidos en el campo de texto -->
+minlength="número" <!-- Número mínimo de caracteres permitidos en el campo de texto -->
+formaction="URL" <!-- Redefine la URL donde se envía el formulario cuando se usa un botón específico -->
+
+<!-- Atributos de presentación y comportamiento -->
+hidden <!-- Oculta el elemento, aunque sigue existiendo en el DOM -->
+data-*="valor" <!-- Atributos personalizados para almacenar información adicional sobre el elemento -->
+lang="código-lenguaje" <!-- Indica el idioma del contenido (por ejemplo, lang="es" para español) -->
+dir="ltr/rtl" <!-- Dirección del texto: left-to-right (ltr) o right-to-left (rtl) -->
+contenteditable="true/false" <!-- Define si el contenido del elemento puede ser editado por el usuario -->
+draggable="true/false" <!-- Define si un elemento puede ser arrastrado -->
+
+<!-- Atributos de imagen y multimedia -->
+width="valor" <!-- Especifica el ancho del elemento (en <img>, <video>, <canvas>, etc.) -->
+height="valor" <!-- Especifica la altura del elemento (en <img>, <video>, <canvas>, etc.) -->
+loop <!-- Define si el audio/video debe repetirse indefinidamente -->
+controls <!-- Muestra los controles del reproductor de audio/video -->
+muted <!-- Desactiva el sonido por defecto en audio/video -->
+preload="none/metadata/auto" <!-- Indica cómo precargar medios, si se debe cargar antes de ser usado -->
+poster="URL" <!-- Imagen que se muestra mientras se carga el video o antes de que comience -->
+
+<!-- Atributos para tablas -->
+colspan="número" <!-- Indica cuántas columnas debe abarcar una celda en una tabla -->
+rowspan="número" <!-- Indica cuántas filas debe abarcar una celda en una tabla -->
+headers="id_cabecera" <!-- Asocia una celda con una cabecera, para mejorar accesibilidad -->
+scope="col/row" <!-- Indica si una cabecera está asociada con una fila o columna -->
+
+<!-- Atributos para listas y elementos estructurales -->
+start="número" <!-- Especifica el número inicial en una lista ordenada (<ol>) -->
+reversed <!-- Invierte el orden de una lista numerada, haciendo que cuente hacia abajo -->
+type="1/a/A/i/I" <!-- Especifica el tipo de marcador en una lista numerada (<ol>) -->
+
+<!-- Atributos de metadatos y SEO -->
+content="valor" <!-- Define el contenido de una metaetiqueta, como <meta name="description" content="texto"> -->
+charset="UTF-8" <!-- Define la codificación de caracteres del documento -->
+http-equiv="valor" <!-- Proporciona directivas HTTP desde el documento HTML -->
+name="valor" <!-- Define el nombre del metadato, como "viewport", "description", etc. -->
+
+<!-- Atributos para scripts y enlaces -->
+defer <!-- Indica que el script debe ejecutarse después de que el documento se haya analizado -->
+async <!-- Permite que el script se ejecute de manera asíncrona, sin bloquear la carga de la página -->
+rel="stylesheet/alternate/icon" <!-- Define la relación entre el documento actual y el recurso vinculado -->
+integrity="hash" <!-- Verifica la integridad del recurso vinculado con un hash específico -->
+crossorigin="anónimo/uso-credenciales" <!-- Controla las solicitudes de recursos a través de dominios -->
+
+<!-- Atributos para eventos -->
+onclick="funciónJavaScript()" <!-- Define qué acción realizar cuando el usuario hace clic -->
+onchange="funciónJavaScript()" <!-- Acción que ocurre cuando el valor de un campo cambia -->
+onmouseover="funciónJavaScript()" <!-- Acción que ocurre cuando el usuario pasa el ratón por encima -->
+onfocus="funciónJavaScript()" <!-- Acción que ocurre cuando un elemento gana foco -->
+onblur="funciónJavaScript()" <!-- Acción que ocurre cuando un elemento pierde foco -->
+
+<!-- Atributos para elementos multimedia y gráficos -->
+controlslist="nodownload nofullscreen noremoteplayback" <!-- Restringe ciertos controles en medios (para <audio> y <video>) -->
+    autoplay <!-- El medio (audio/video) comienza a reproducirse automáticamente al cargarse -->
+    playsinline <!-- Indica que el video debe reproducirse en línea en lugar de pantalla completa en dispositivos móviles -->
+    crossorigin="anonymous/use-credentials" <!-- Gestiona cómo se realizan solicitudes de recursos multimedia a dominios externos -->
+    buffered <!-- Representa las partes del medio que ya se han almacenado en el búfer -->
+    poster="URL" <!-- Imagen que aparece antes de que el video comience a reproducirse -->
+    
+    <!-- Atributos específicos para <input> -->
+    accept="tipo_mime" <!-- Especifica el tipo de archivo permitido (en <input type="file">) -->
+    list="id_datalist" <!-- Asocia el input con un <datalist> para mostrar sugerencias -->
+    size="número" <!-- Define el ancho visible de un campo de texto o el número de opciones visibles en <select> -->
+    autocomplete="on/off" <!-- Habilita o deshabilita la autocompletación en campos de texto -->
+    inputmode="valor" <!-- Sugerencia al navegador sobre el tipo de teclado que debe mostrar (por ejemplo, "numeric" para números) -->
+    
+    <!-- Atributos para interacción y accesibilidad -->
+    tabindex="número" <!-- Define el orden en que los elementos reciben el foco mediante tabulación -->
+    role="valor" <!-- Define el rol del elemento para mejorar accesibilidad, usado con tecnologías como ARIA -->
+    aria-* <!-- Atributos específicos de ARIA (Accessible Rich Internet Applications) para accesibilidad -->
+    accesskey="tecla" <!-- Define una tecla de acceso rápido para enfocar o activar un elemento -->
+    
+    <!-- Atributos para elementos de contenido incrustado -->
+    frameborder="0/1" <!-- Define si el borde de un <iframe> se muestra o no (ya obsoleto en HTML5, usar CSS) -->
+    allow="autoplay; fullscreen" <!-- Controla los permisos de funciones avanzadas en <iframe>, como el uso de pantalla completa o la reproducción automática de medios -->
+    sandbox="valor" <!-- Añade restricciones adicionales a un <iframe>, como impedir scripts o navegación -->
+    srcdoc="contenido" <!-- Permite incluir directamente HTML dentro de un <iframe> -->
+    loading="lazy" <!-- Defer el cargado de imágenes/iframes hasta que estén en la ventana visible (lazy loading) -->
+    
+    <!-- Atributos de optimización para SEO y rendimiento -->
+    hreflang="código_lenguaje" <!-- Especifica el idioma del recurso referenciado, útil para SEO y accesibilidad -->
+    referrerpolicy="no-referrer/origin/etc." <!-- Controla la información de referencia enviada en los enlaces -->
+    ping="lista_URL" <!-- Envía solicitudes asincrónicas a las URL especificadas cuando se hace clic en un enlace -->
+    
+    <!-- Atributos específicos para <textarea> -->
+    rows="número" <!-- Establece el número de filas visibles en un <textarea> -->
+    cols="número" <!-- Establece el número de columnas visibles en un <textarea> -->
+    wrap="soft/hard" <!-- Define cómo debe hacerse el ajuste de líneas en el contenido del <textarea> -->
+    
+    <!-- Atributos para control de formularios avanzados -->
+    novalidate <!-- Desactiva la validación automática del formulario -->
+    formenctype="tipo_mime" <!-- Especifica cómo se debe codificar el formulario al enviarlo, sobrescribiendo el atributo enctype de <form> -->
+    formmethod="get/post" <!-- Método HTTP que debe usarse al enviar el formulario (solo en botones) -->
+    formtarget="_blank/_self" <!-- Define el destino de la respuesta al enviar un formulario -->
+    formnovalidate <!-- Desactiva la validación del formulario al enviar (solo para botones de tipo submit) -->
+    
+    <!-- Atributos para listas de selección (<select>) -->
+    size="número" <!-- Número de opciones visibles en un <select> -->
+    required <!-- Especifica que al menos una opción debe ser seleccionada -->
+    multiple <!-- Permite seleccionar más de una opción a la vez -->
+    
+    <!-- Atributos de estructura del documento -->
+    manifest="URL" <!-- Especifica el manifiesto de la aplicación web, permitiendo el almacenamiento en caché para funcionamiento offline -->
+    
+    <!-- Atributos para elementos <ol> (listas ordenadas) -->
+    reversed <!-- Invierte el orden de una lista numerada, haciendo que cuente hacia atrás -->
+    start="número" <!-- Define el número inicial de la lista ordenada (de <ol>) -->
+    
+    <!-- Atributos relacionados con el viewport -->
+    srcset="URL 1x, URL 2x" <!-- Lista de diferentes resoluciones de imágenes para elegir la mejor según el dispositivo -->
+    sizes="ancho" <!-- Define qué imagen de las proporcionadas en srcset debe ser utilizada según el tamaño de la pantalla -->
+    
+    <!-- Atributos de gestión de memoria y rendimiento -->
+    defer <!-- Aplaza la ejecución de un script hasta que el documento haya sido completamente cargado -->
+    async <!-- Ejecuta el script de manera asíncrona, sin bloquear la carga de la página -->
+    
+    <!-- Atributos para elementos de contenido interactivo -->
+    open <!-- Indica que el <details> está abierto por defecto -->
+    translate="yes/no" <!-- Indica si el contenido del elemento debe ser traducido o no -->
+    
+    <!-- Atributos para etiquetas de audio y video -->
+    muted <!-- Muta el sonido de audio o video por defecto -->
+    poster="URL" <!-- Especifica una imagen que se muestra mientras se descarga el video o hasta que el usuario le da play -->
+    preload="none/metadata/auto" <!-- Define si el contenido multimedia debe precargarse antes de su reproducción -->
+    

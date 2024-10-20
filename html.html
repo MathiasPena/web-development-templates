@@ -1,0 +1,183 @@
+<!-- Etiquetas de estructura básica del documento -->
+<!DOCTYPE html> <!-- Define el tipo de documento y la versión de HTML -->
+<html lang="es"> <!-- Raíz del documento, define el idioma del contenido -->
+<head> <!-- Contiene metadatos como el título, enlaces a scripts y estilos -->
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la escala en dispositivos móviles -->
+    <title>Mi Documento HTML</title> <!-- Título que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula un archivo CSS externo -->
+    <script src="script.js" defer></script> <!-- Vincula un archivo JavaScript con ejecución diferida -->
+</head>
+<body> <!-- Contenido visible del documento -->
+
+<!-- Etiquetas de encabezado -->
+<h1>Encabezado Nivel 1</h1> <!-- Encabezado principal -->
+<h2>Encabezado Nivel 2</h2> <!-- Subencabezado -->
+<h3>Encabezado Nivel 3</h3> <!-- Encabezado de nivel intermedio -->
+<h4>Encabezado Nivel 4</h4>
+<h5>Encabezado Nivel 5</h5>
+<h6>Encabezado Nivel 6</h6> <!-- Menor nivel de encabezado -->
+
+<!-- Etiquetas de texto -->
+<p>Este es un párrafo.</p> <!-- Define un párrafo de texto -->
+<span>Texto en línea</span> <!-- Contenedor en línea sin salto de línea -->
+<strong>Texto en negrita</strong> <!-- Negrita semántica -->
+<em>Texto en cursiva</em> <!-- Cursiva semántica -->
+<small>Texto más pequeño</small> <!-- Texto de menor tamaño -->
+<mark>Texto resaltado</mark> <!-- Resalta texto -->
+<abbr title="World Wide Web">WWW</abbr> <!-- Define una abreviatura -->
+<code>Código en línea</code> <!-- Muestra código en línea -->
+
+<!-- Etiquetas de enlaces -->
+<a href="https://www.google.com" target="_blank">Enlace externo</a> <!-- Enlace a otra página, abre en nueva pestaña -->
+<a href="#seccion1">Enlace a una sección</a> <!-- Enlace interno dentro de la página -->
+
+<!-- Etiquetas multimedia -->
+<img src="imagen.jpg" alt="Descripción de la img"> <!-- Muestra una imagen con una descripción alternativa -->
+<video src="video.mp4" controls autoplay></video> <!-- Muestra un video con controles -->
+<audio src="audio.mp3" controls></audio> <!-- Muestra un reproductor de audio -->
+<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe> <!-- Incrusta un contenido externo, como un video de YouTube -->
+
+<!-- Etiquetas de formularios -->
+<form action="/enviar" method="POST"> <!-- Formulario con el método POST -->
+    <input type="text" name="nombre" placeholder="Tu nombre"> <!-- Campo de texto -->
+    <input type="email" name="correo" required> <!-- Campo de correo electrónico obligatorio -->
+    <input type="password" name="contraseña"> <!-- Campo de contraseña -->
+    <input type="file" name="archivo" accept=".jpg, .png"> <!-- Campo para subir archivos -->
+    <input type="radio" name="genero" value="masculino"> Masculino <!-- Botón de opción -->
+    <input type="checkbox" name="terminos" required> Acepto los términos <!-- Casilla de verificación -->
+    <select name="opciones"> <!-- Menú desplegable -->
+        <option value="1">Opción 1</option>
+        <option value="2">Opción 2</option>
+    </select>
+    <textarea name="comentarios" rows="4" cols="50">Escribe aquí tus comentarios...</textarea> <!-- Área de texto -->
+    <button type="submit">Enviar</button> <!-- Botón para enviar formulario -->
+</form>
+
+<!-- Etiquetas de agrupación y contenedores -->
+<div> <!-- Contenedor en bloque para agrupar contenido -->
+    <section> <!-- Define una sección de contenido -->
+        <article> <!-- Define un artículo independiente -->
+            <header> <!-- Encabezado de una sección o artículo -->
+                <h1>Título del artículo</h1>
+            </header>
+            <footer> <!-- Pie de un artículo o sección -->
+                <p>Publicado el 20 de octubre de 2024</p>
+            </footer>
+        </article>
+    </section>
+    <aside> <!-- Contenido relacionado pero independiente (barra lateral, etc.) -->
+        <p>Este es un comentario relacionado.</p>
+    </aside>
+</div>
+
+<!-- Etiquetas de lista -->
+<ul> <!-- Lista desordenada -->
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+</ul>
+<ol> <!-- Lista ordenada -->
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+</ol>
+<dl> <!-- Lista de definiciones -->
+    <dt>Término</dt>
+    <dd>Definición del término</dd>
+</dl>
+
+<!-- Etiquetas de tabla -->
+<table>
+    <caption>Título de la tabla</caption> <!-- Título de la tabla -->
+    <thead> <!-- Encabezado de la tabla -->
+        <tr> <!-- Fila de la tabla -->
+            <th>Columna 1</th> <!-- Encabezado de columna -->
+            <th>Columna 2</th>
+        </tr>
+    </thead>
+    <tbody> <!-- Cuerpo de la tabla -->
+        <tr>
+            <td>Dato 1</td> <!-- Celda de datos -->
+            <td>Dato 2</td>
+        </tr>
+    </tbody>
+    <tfoot> <!-- Pie de la tabla -->
+        <tr>
+            <td>Total</td>
+            <td>100</td>
+        </tr>
+    </tfoot>
+</table>
+
+<!-- Etiquetas para scripts -->
+<script src="app.js"></script> <!-- Incluir un archivo JavaScript -->
+<noscript>El JavaScript está desactivado en tu navegador.</noscript> <!-- Mensaje si JavaScript está deshabilitado -->
+
+<!-- Etiquetas adicionales y menos comunes -->
+
+<!-- Etiquetas relacionadas con SVG (gráficos vectoriales escalables) -->
+<svg width="100" height="100"> <!-- Define un contenedor para gráficos vectoriales -->
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red"></circle> <!-- Dibuja un círculo -->
+</svg>
+
+<!-- Etiquetas relacionadas con multimedia y contenido externo -->
+<object data="document.pdf" type="application/pdf" width="600" height="400"></object> <!-- Incrusta un archivo PDF u otro tipo de contenido -->
+<embed src="animation.swf" width="600" height="400"></embed> <!-- Incrusta contenido multimedia, a menudo Flash (obsoleto) -->
+
+<!-- Etiquetas semánticas adicionales -->
+<figure> <!-- Agrupa contenido de imagen con su descripción -->
+    <img src="image.jpg" alt="Imagen de ejemplo">
+    <figcaption>Descripción de la imagen</figcaption> <!-- Descripción de la imagen o contenido gráfico -->
+</figure>
+
+<!-- Etiquetas interactivas -->
+<details> <!-- Contenedor que se puede expandir/colapsar -->
+    <summary>Clic para expandir</summary> <!-- Resumen que se muestra cuando está colapsado -->
+    <p>Contenido adicional que se muestra al expandir.</p>
+</details>
+
+<dialog open> <!-- Define un cuadro de diálogo -->
+    <p>Este es un diálogo abierto.</p>
+    <button>Close</button>
+</dialog>
+
+<!-- Etiquetas obsoletas o en desuso (no recomendadas en HTML5) -->
+<marquee>Texto que se mueve</marquee> <!-- Crea un texto que se desplaza (obsoleto) -->
+<font color="red">Texto en rojo</font> <!-- Cambia el color y tipo de letra (obsoleto) -->
+
+<!-- Etiquetas relacionadas con accesibilidad -->
+<output name="resultado">0</output> <!-- Muestra el resultado de un cálculo -->
+<progress value="70" max="100">70%</progress> <!-- Barra de progreso -->
+<meter value="2" min="0" max="10">2</meter> <!-- Indicador de medición -->
+
+<!-- Etiquetas de agrupación adicionales -->
+<main> <!-- Define el contenido principal de un documento -->
+    <p>Contenido principal aquí.</p>
+</main>
+
+<template> <!-- Define una plantilla de contenido que no se renderiza hasta ser activada -->
+    <p>Este contenido no se muestra hasta ser usado en JavaScript.</p>
+</template>
+
+<slot></slot> <!-- Se usa en componentes Web para designar contenido dinámico -->
+
+<!-- Etiquetas de navegación y relaciones entre documentos -->
+<nav> <!-- Define un conjunto de enlaces de navegación -->
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#about">Acerca de</a></li>
+        <li><a href="#contact">Contacto</a></li>
+    </ul>
+</nav>
+
+<!-- Etiquetas relacionadas con el rendimiento -->
+<link rel="preload" href="styles.css" as="style"> <!-- Indica al navegador que cargue el recurso antes para mejorar el rendimiento -->
+<link rel="prefetch" href="nextpage.html"> <!-- Precede a la carga de la página para mejorar tiempos de respuesta -->
+
+<!-- Etiquetas de metadatos adicionales -->
+<meta name="author" content="Mathias Pena"> <!-- Especifica el autor del documento -->
+<meta name="description" content="Un resumen breve de la página"> <!-- Breve descripción del contenido de la página -->
+<meta name="keywords" content="HTML, CSS, Web"> <!-- Palabras clave para motores de búsqueda -->
+
+
+</body>
+</html>

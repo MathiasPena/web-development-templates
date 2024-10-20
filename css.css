@@ -1,0 +1,206 @@
+/* Propiedades de Texto */
+* {
+color: red; /* Establece el color del texto */
+font-size: 16px; /* Establece el tamaño de la fuente */
+font-family: 'Arial', sans-serif; /* Define la familia de fuentes a usar */
+font-weight: bold; /* Define el grosor del texto: normal, bold, lighter o valores numéricos */
+font-style: italic; /* Aplica estilo cursiva al texto */
+text-align: center; /* Alinea el texto: left, right, center, justify */
+text-transform: uppercase; /* Convierte el texto a mayúsculas */
+text-decoration: underline; /* Subraya el texto */
+line-height: 1.5; /* Espaciado vertical entre líneas */
+letter-spacing: 2px; /* Espaciado entre letras */
+word-spacing: 5px; /* Espaciado entre palabras */
+
+/* Propiedades de Fondo */
+background-color: #f0f0f0; /* Establece el color de fondo */
+background-image: url('image.jpg'); /* Define una imagen de fondo */
+background-position: center; /* Posiciona la imagen de fondo: top, bottom, left, right, center */
+background-size: cover; /* Ajusta el tamaño de la imagen: auto, cover, contain */
+background-repeat: no-repeat; /* Evita que la imagen se repita */
+background-attachment: fixed; /* Fija la imagen de fondo mientras se desplaza */
+
+/* Propiedades de Bordes */
+border: 1px solid black; /* Define el grosor, estilo y color del borde */
+border-radius: 10px; /* Redondea las esquinas del borde */
+border-top: 2px dashed blue; /* Borde superior específico */
+border-bottom-left-radius: 5px; /* Redondea solo la esquina inferior izquierda */
+outline: 2px dotted red; /* Define un borde externo al elemento, similar al borde */
+
+/* Propiedades de Caja (Box Model) */
+width: 200px; /* Define el ancho del elemento */
+height: 150px; /* Define la altura del elemento */
+padding: 20px; /* Espacio interno entre el borde y el contenido */
+margin: 15px; /* Espacio externo entre el borde del elemento y otros elementos */
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* Aplica una sombra al elemento */
+overflow: hidden; /* Oculta el contenido que excede el área de la caja: visible, hidden, scroll, auto */
+
+/* Propiedades de Posicionamiento */
+position: absolute; /* Posiciona el elemento respecto al contenedor posicionado más cercano */
+top: 10px; /* Define la distancia desde el borde superior */
+left: 50%; /* Posiciona el elemento a la mitad horizontalmente */
+z-index: 100; /* Controla la superposición de elementos (mayor valor = más arriba) */
+display: flex; /* Define el tipo de visualización, en este caso, flexbox */
+visibility: hidden; /* Oculta el elemento sin quitarlo del flujo de la página */
+
+/* Propiedades de Flexbox */
+display: flex; /* Activa el modo de diseño flex */
+flex-direction: column; /* Ordena los elementos hijos en una columna */
+justify-content: center; /* Alinea los elementos a lo largo del eje principal */
+align-items: flex-start; /* Alinea los elementos a lo largo del eje transversal */
+flex-wrap: wrap; /* Permite que los elementos hijos se distribuyan en múltiples filas */
+
+/* Propiedades de Grid */
+display: grid; /* Activa el modo de diseño grid */
+grid-template-columns: repeat(3, 1fr); /* Define una cuadrícula de 3 columnas de igual tamaño */
+grid-template-rows: auto 1fr; /* Define filas con tamaño automático y una flexible */
+grid-gap: 10px; /* Define el espacio entre las celdas de la cuadrícula */
+align-self: start; /* Alinea un elemento hijo en una fila específica */
+justify-self: center; /* Alinea un elemento hijo en una columna específica */
+
+/* Propiedades de Transición y Animación */
+transition: all 0.3s ease-in-out; /* Aplica una transición suave para todos los cambios */
+animation: slide 2s infinite; /* Aplica una animación repetida indefinidamente */
+
+/* Definición de keyframes para animaciones */
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100px);
+    }
+}
+
+/* Propiedades de Transformación */
+transform: rotate(45deg); /* Rota el elemento 45 grados */
+transform: scale(1.5); /* Escala el tamaño del elemento a 1.5 veces su tamaño original */
+transform: translateX(50px); /* Mueve el elemento 50px en el eje X */
+transform: skew(20deg, 10deg); /* Inclina el elemento en ambos ejes */
+
+/* Propiedades de Visibilidad y Opacidad */
+opacity: 0.8; /* Define la opacidad del elemento (0 es transparente, 1 es opaco) */
+visibility: visible; /* Controla la visibilidad del elemento (visible u oculto) */
+
+/* Propiedades de Manipulación del Cursor */
+cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
+cursor: not-allowed; /* Indica que una acción no está permitida */
+
+/* Propiedades de Alineación de Texto y Bloques */
+vertical-align: middle; /* Alinea verticalmente el contenido en línea */
+float: left; /* Flota el elemento hacia la izquierda */
+clear: both; /* Evita que los elementos flotantes interfieran con este */
+
+/* Propiedades de Listas */
+list-style-type: none; /* Elimina el estilo de lista (puntos, números) */
+list-style-image: url('bullet.png'); /* Usa una imagen como marcador de lista */
+
+/* Propiedades de Tablas */
+border-collapse: collapse; /* Colapsa los bordes de las celdas de una tabla en uno solo */
+border-spacing: 10px; /* Define el espacio entre las celdas de una tabla */
+
+/* Propiedades de Tipografía Avanzada */
+font-variant: small-caps; /* Convierte el texto en pequeñas mayúsculas */
+font-stretch: expanded; /* Estira o comprime las fuentes */
+
+/* Propiedades de Background Avanzadas */
+background-clip: padding-box; /* Define hasta dónde llega el fondo (border-box, padding-box, content-box) */
+background-origin: border-box; /* Establece el origen de la imagen de fondo */
+
+/* Propiedades de Filtros y Efectos */
+filter: blur(5px); /* Aplica un desenfoque a un elemento */
+filter: grayscale(100%); /* Convierte un elemento a escala de grises */
+backdrop-filter: blur(10px); /* Aplica un filtro a los elementos detrás del elemento actual */
+
+/* Propiedades de Contenedores y Layout */
+box-sizing: border-box; /* Incluye padding y borde en el tamaño total del elemento */
+min-width: 100px; /* Define el ancho mínimo del elemento */
+max-width: 300px; /* Define el ancho máximo del elemento */
+min-height: 100px; /* Define la altura mínima del elemento */
+max-height: 500px; /* Define la altura máxima del elemento */
+
+/* Propiedades de Transiciones Avanzadas */
+transition-delay: 0.5s; /* Retrasa el inicio de la transición */
+transition-property: background-color; /* Define qué propiedad debe ser animada */
+transition-duration: 1s; /* Especifica la duración de la transición */
+
+/* Propiedades de Animación Avanzadas */
+animation-delay: 1s; /* Establece un retraso antes de iniciar la animación */
+animation-timing-function: ease-in-out; /* Define la curva de aceleración de la animación */
+animation-iteration-count: infinite; /* Define cuántas veces se repetirá la animación */
+
+/* Propiedades de Control de Scroll */
+scroll-behavior: smooth; /* Define un comportamiento suave para el scroll */
+scroll-snap-type: x mandatory; /* Obliga a los elementos a alinearse en una posición específica en el scroll horizontal */
+
+/* Propiedades de Multicolumna */
+column-count: 3; /* Divide el contenido en 3 columnas */
+column-gap: 20px; /* Establece el espacio entre las columnas */
+column-rule: 1px solid black; /* Define una línea entre columnas */
+
+/* Propiedades de Sombras */
+text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Aplica una sombra al texto */
+box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Aplica una sombra interna al borde de un elemento */
+
+/* Propiedades de Interactividad */
+pointer-events: none; /* Deshabilita la interacción con el elemento */
+user-select: none; /* Evita que el usuario pueda seleccionar el texto del elemento */
+
+/* Propiedades de Medios y Consultas */
+@media (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+} /* Aplica estilos específicos para pantallas con un ancho máximo de 600px */
+
+/* Propiedades de Flexbox Avanzadas */
+flex-grow: 1; /* Permite que el elemento crezca para llenar el espacio disponible */
+flex-shrink: 0; /* Evita que el elemento se reduzca cuando hay poco espacio */
+flex-basis: 200px; /* Define el tamaño inicial del elemento antes de aplicar flex-grow o flex-shrink */
+
+/* Propiedades de Grid Avanzadas */
+grid-auto-flow: dense; /* Ajusta los elementos automáticamente en las celdas disponibles */
+grid-column: 1 / span 2; /* El elemento ocupa dos columnas en la cuadrícula */
+grid-row: 2 / 4; /* El elemento abarca desde la fila 2 hasta la 4 */
+align-content: center; /* Alinea el contenido dentro del grid */
+justify-content: space-between; /* Espacia los elementos de manera equidistante en el grid */
+
+/* Propiedades de Fuentes Avanzadas */
+font-variant-ligatures: no-common-ligatures; /* Controla las ligaduras tipográficas */
+font-feature-settings: 'smcp' on; /* Activa pequeñas mayúsculas u otras características tipográficas */
+
+/* Propiedades de Pseudoelementos */
+content: 'Texto'; /* Define el contenido de un pseudoelemento ::before o ::after */
+counter-increment: section; /* Incrementa un contador en un pseudoelemento */
+counter-reset: section; /* Reinicia un contador en un pseudoelemento */
+
+/* Propiedades de Tablas Avanzadas */
+table-layout: fixed; /* Define el ancho de las columnas basado en la primera fila */
+empty-cells: hide; /* Oculta celdas vacías en una tabla */
+
+/* Propiedades de Transiciones 3D */
+perspective: 1000px; /* Define la profundidad de perspectiva para transformaciones 3D */
+transform-style: preserve-3d; /* Hace que los hijos se rendericen en 3D */
+backface-visibility: hidden; /* Oculta el reverso de un elemento durante rotaciones 3D */
+
+/* Propiedades de Desbordamiento (Overflow) */
+overflow-x: scroll; /* Habilita el scroll horizontal */
+overflow-y: hidden; /* Oculta el desbordamiento vertical */
+overflow-wrap: break-word; /* Permite que las palabras se rompan para ajustarse al contenedor */
+
+/* Propiedades de Atributos Customizados (CSS Variables) */
+--main-color: #3498db; /* Define una variable personalizada */
+background-color: var(--main-color); /* Usa una variable CSS para establecer el color de fondo */
+
+/* Propiedades de SVG */
+fill: red; /* Define el color de relleno en un elemento SVG */
+stroke: black; /* Define el color de borde en un elemento SVG */
+stroke-width: 2px; /* Define el grosor del borde en un elemento SVG */
+
+/* Propiedades de Filtros de Imagen */
+filter: brightness(150%); /* Ajusta el brillo de una imagen */
+filter: contrast(200%); /* Ajusta el contraste de una imagen */
+filter: sepia(100%); /* Aplica un filtro sepia a una imagen */
+
+
+}
